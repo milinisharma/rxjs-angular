@@ -1,0 +1,89 @@
+@import "primeicons/primeicons.css";
+
+body {
+    font-family: 'Open Sans';
+}
+
+.light-black-24-600 {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 600;
+    color: #37393e;
+    letter-spacing: 0.075px;
+}
+.light-black-14-600 {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    color: #37393e;
+    letter-spacing: 0.075px;
+}
+.light-black-16-500 {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 500;
+    color: #37393e;
+    letter-spacing: 0.075px;
+}
+.light-black-16-400 {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: #37393e;
+    letter-spacing: 0.075px;
+}
+.light-black-14-600 {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: #37393e;
+    letter-spacing: 0.075px;
+}
+.light-black-14-500 {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 500;
+    color: #37393e;
+    letter-spacing: 0.075px;
+}
+.light-black-14-400 {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: #37393e;
+    letter-spacing: 0.075px;
+}
+
+//Prime Ng Card's CSS
+
+p-card {
+    width: -webkit-fill-available !important;
+}
+
+.p-card .p-card-title {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: unset;
+}
+
+.p-card .p-card-content {
+    padding: 0.5rem 0 !important;
+}
+
+//Menubar's CSS
+.p-menubar {
+    background: #e1e6fa !important;
+    gap: 1rem;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:not(.p-disabled):hover {
+    background-color: #f2f2f2 !important; 
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:focus {
+    border: unset !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {   
+    color: #183152;
+}
