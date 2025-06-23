@@ -5,7 +5,7 @@ import { PromisesComponent } from './components/promises/promises.component';
 
 const routes: Routes = [
   {
-    path: 'observanles', component: ObservablesComponent
+    path: 'observables', component: ObservablesComponent
   },
   {
     path: 'promises', component: PromisesComponent

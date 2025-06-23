@@ -112,9 +112,6 @@ export class PromisesComponent {
         }, 2000)
       });
 
-      //To see that async is 
-      promiseRes.then(console.log)
-
       let response = await promiseRes;
       this.chocolates = response;
       console.log(this.chocolates);

@@ -4,6 +4,35 @@ body {
     font-family: 'Open Sans';
 }
 
+// Buttons SCSS
+.primary-button .p-button {
+    background: #375d81 !important;
+    color: #f2f2f2;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #375d81;
+    &:hover {
+        background: #647e9c !important;
+        border: 1px solid #647e9c !important;
+
+    }
+}
+
+//Main container SCSS
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 4.25rem !important;
+    width: -webkit-fill-available;
+    margin: unset !important;
+    max-width: -webkit-fill-available !important;
+}
+
+// Fonts SCSS
+
 .light-black-24-600 {
     font-family: 'Open Sans';
     font-size: 24px;
