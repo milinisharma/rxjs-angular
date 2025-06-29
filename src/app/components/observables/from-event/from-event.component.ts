@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { fromEvent } from 'rxjs';
+import { AddChocolatesService } from 'src/app/services/add-chocolates.service';
 
 @Component({
   selector: 'app-from-event',
@@ -10,7 +11,9 @@ export class FromEventComponent implements OnInit, AfterViewInit{
 
   @ViewChild('addBtn', { static: false }) addBtn!: ElementRef;
 
-  constructor() {
+  constructor(
+    private chocolateService: AddChocolatesService
+  ) { 
 
   }
 
@@ -18,18 +21,15 @@ export class FromEventComponent implements OnInit, AfterViewInit{
 
   }
 
-  addChocolate(chocolateAdded: any) {
-    let ele = document.createElement('li');
-    ele.innerText = chocolateAdded;
-    document.getElementById('chocolateList')?.appendChild(ele)
-  }
+ 
 
   ngAfterViewInit () {
     let count = 1;
     fromEvent(this.addBtn.nativeElement, 'click').subscribe((response: any) => {
       let chocolateAdded = 'Chocolate ' + count++
-      console.log(chocolateAdded)
-      this.addChocolate (chocolateAdded)
+      console.log(chocolateAdded, 'chocolateList')
+      this.chocolateService.addChocolate (chocolateAdded, 'chocolateList')
+      this.chocolateService.addChocolate (chocolateAdded, 'chocolateList2')
     });
   }
 }
