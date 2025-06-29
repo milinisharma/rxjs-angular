@@ -1,0 +1,12 @@
+<!-- list.component.html -->
+<div class="p-grid">
+    <div class="p-col-12 p-md-4" *ngFor="let item of observableType">
+        <p-card header="{{ item.name }}">
+            <div class="card-content">
+                <span>{{ item.description || 'No description provided.' }}</span>
+                <p-button class="primary-button" [label]="'Check ' + item.name"
+                    (onClick)="openObservableType(item.routerLink)"></p-button>
+            </div>
+        </p-card>
+    </div>
+</div>
