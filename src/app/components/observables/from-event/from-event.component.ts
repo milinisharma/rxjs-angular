@@ -17,11 +17,7 @@ export class FromEventComponent implements OnInit, AfterViewInit{
 
   }
 
-  ngOnInit() {
-
-  }
-
- 
+  ngOnInit() {}
 
   ngAfterViewInit () {
     let count = 1;

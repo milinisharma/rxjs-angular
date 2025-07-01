@@ -1,20 +1,20 @@
 <div class="obs-container">
     <div class="obs-header-row">
         <app-back-btn></app-back-btn>
-        <span class="light-black-24-600">From Event</span>
+        <span class="light-black-24-600">Interval</span>
     </div>
 <div class="cards-row">
     <p-card header="Click to add Chocolates">
-        <button #addBtn pButton class="primary-normal-btn">Add Chocolate</button>
+        <button pButton class="primary-normal-btn" (click)="addCake()">Add Cake</button>
     </p-card>
-    <p-card header="Chocolates Added:">
+    <p-card header="Cakes Ordered:">
         <div class="card-content">
-            <ul id="chocolateList"></ul>
+            <ul id="cakeList1"></ul>
         </div>
     </p-card>
-    <p-card header="Chocolates Added:">
+    <p-card header="Cakes Ordered:">
         <div class="card-content">
-            <ul id="chocolateList2"></ul>
+            <ul id="cakeList2"></ul>
         </div>
     </p-card>
 </div>

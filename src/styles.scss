@@ -7,13 +7,40 @@ body {
 // Buttons SCSS
 .primary-button .p-button {
     background: #375d81 !important;
-    color: #f2f2f2;
-    border-radius: 12px;
-    padding: 0.5rem 1rem;
-    border: 1px solid #375d81;
+    color: #f2f2f2 !important;
+    border-radius: 12px !important;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid #375d81 !important;
     &:hover {
         background: #647e9c !important;
         border: 1px solid #647e9c !important;
+
+    }
+}
+
+.primary-normal-btn {
+    background: #375d81 !important;
+    color: #f2f2f2 !important;
+    border-radius: 12px !important;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid #375d81 !important;
+    &:hover {
+        background: #647e9c !important;
+        border: 1px solid #647e9c !important;
+
+    }
+}
+
+.tertiary-normal-btn {
+    background: transparent !important;
+    color: #375d81 !important;
+    border-radius: 12px !important;
+    padding: 0.5rem 1rem !important;
+    border: unset!important;
+    max-width: fit-content !important;
+    &:hover {
+        background: #abc8e2 !important;
+        border: 1px solid #abc8e2 !important;
 
     }
 }
@@ -22,13 +49,46 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: center;
     gap: 1rem;
     padding: 1.5rem 4.25rem !important;
-    width: -webkit-fill-available;
+    width: -webkit-fill-available !important;
     margin: unset !important;
     max-width: -webkit-fill-available !important;
+}
+
+// Main Observable Container CSS
+.obs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: -webkit-fill-available !important;
+    margin: unset !important;
+    max-width: -webkit-fill-available !important;
+}
+
+// Main Observable Header Row
+.obs-header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: -webkit-fill-available !important;
+    margin: unset !important;
+    max-width: -webkit-fill-available !important;
+}
+
+// Observable Cards row
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: -webkit-fill-available;
+    align-items: stretch;
 }
 
 // Fonts SCSS
@@ -115,4 +175,9 @@ p-card {
 
 .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {   
     color: #183152;
+}
+
+// Card Content SCSS 
+.card-content {
+    display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-start; justify-content: center;
 }

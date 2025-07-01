@@ -26,10 +26,10 @@ export class ListComponent implements OnInit {
 
   ngOnInit () {
     this.observableType = [
-      { id: '1', name: 'From Event', description: 'Fires on DOM events', routerLink: 'from-event'  },
+      { id: '1', name: 'From-Event', description: 'Fires on DOM events', routerLink: 'from-event'  },
       { id: '2', name: 'Interval', description: 'Emits at regular intervals', routerLink: 'interval' },
-      // { id: '2', name: 'Interval', description: 'Emits at regular intervals', routerLink: 'interval' },
-      // { id: '2', name: 'Interval', description: 'Emits at regular intervals', routerLink: 'interval' },
+      { id: '2', name: 'Timer', description: 'Emit only once after delay as well as repeatedly with delay + interval', routerLink: 'timer' },
+      { id: '2', name: 'of', description: '', routerLink: 'of' },
       // { id: '2', name: 'Interval', description: 'Emits at regular intervals', routerLink: 'interval' },
       // { id: '2', name: 'Interval', description: 'Emits at regular intervals', routerLink: 'interval' },
       // { id: '2', name: 'Interval', description: 'Emits at regular intervals', routerLink: 'interval' },

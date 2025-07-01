@@ -4,7 +4,7 @@
         <p-card header="{{ item.name }}">
             <div class="card-content">
                 <span>{{ item.description || 'No description provided.' }}</span>
-                <p-button class="primary-button" [label]="'Check ' + item.name"
+                <p-button class="primary-button" [label]="'Check ' + item.name + '()'" 
                     (onClick)="openObservableType(item.routerLink)"></p-button>
             </div>
         </p-card>
