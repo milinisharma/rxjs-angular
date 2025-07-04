@@ -1,1 +1,21 @@
-<p>timer works!</p>
+<div class="container">
+     <div class="obs-header-row">
+        <app-back-btn></app-back-btn>
+        <span class="light-black-24-600">From Event</span>
+    </div>
+    <div class="cards-row">
+        <p-card header="Click to add Chocolates">
+        <button pButton class="primary-normal-btn" (click)="addPie()">Order Pie</button>
+    </p-card>
+    <p-card header="Pies Ordered:">
+        <div class="card-content">
+            <ul id="pieList1"></ul>
+        </div>
+    </p-card>
+    <p-card header="Pies Ordered:">
+        <div class="card-content">
+            <ul id="pieList2"></ul>
+        </div>
+    </p-card>
+    </div>
+</div>
