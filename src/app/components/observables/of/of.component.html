@@ -1,1 +1,37 @@
-<p>of works!</p>
+<div class="container">
+     <div class="obs-header-row">
+        <app-back-btn></app-back-btn>
+        <span class="light-black-24-600">Of</span>
+    </div>
+    <div class="cards-row">
+        <p-card header="Click to add Cookie">
+        <button pButton class="primary-normal-btn" (click)="bakeCookies()">Order Cookie</button>
+    </p-card>
+    <p-card header="Cookies Ordered:">
+        <div class="card-content">
+            <ul id="cookieList1"></ul>
+        </div>
+    </p-card>
+    <p-card header="Cookies Ordered:">
+        <div class="card-content">
+            <ul id="cookieList2" *ngIf="cookiesReceived">
+                <li>
+                    <strong>a: </strong> <span>{{cookiesReceived.a}}</span>
+                </li>
+                <li>
+                    <strong>b: </strong> <span>{{cookiesReceived.b}}</span>
+                </li>
+                <li>
+                    <strong>c: </strong> <span>{{cookiesReceived.c}}</span>
+                </li>
+                <li>
+                    <strong>d: </strong> <span>{{cookiesReceived.d}}</span>
+                </li>
+                <li>
+                    <strong>e: </strong> <span>{{cookiesReceived.e}}</span>
+                </li>
+            </ul>
+        </div>
+    </p-card>
+    </div>
+</div>
