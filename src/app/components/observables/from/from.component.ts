@@ -17,7 +17,7 @@ export class FromComponent {
 
   bakeCroissants() {
 
-    let croissantsArr = [
+    let CroissantsArr = [
       "Croissant 1",
       "Croissant 2",
       "Croissant 3",
@@ -25,8 +25,8 @@ export class FromComponent {
       "Croissant 5",
     ]
 
-    const bakeCrossaint = from(croissantsArr);
-    bakeCrossaint.subscribe((response: any) => {
+    const bakeCroissant = from(CroissantsArr);
+    bakeCroissant.subscribe((response: any) => {
       console.log(response);
       this.chocolateService.addChocolate(response, 'croissantList1')
     });
@@ -43,19 +43,24 @@ export class FromComponent {
       this.chocolateService.addChocolate(response, 'croissantList2');
     });
 
-    const bakeCroissantString = from("Croissants are baked ~String");
-    bakeCroissantString.subscribe((response: any) => {
+    const bakeCroissantstring = from("Croissants are baked ~String");
+    bakeCroissantstring.subscribe((response: any) => {
       this.chocolateService.addChocolate(response, 'croissantList3')
+    });
+
+    const cIterator: any = this.bakeCroissantsFromI(5);
+    const bakeCroissantsI = from(cIterator);
+    bakeCroissantsI.subscribe((response: any) => {
+      this.chocolateService.addChocolate(response, 'croissantList4')
     })
+}
 
-
-
-
-
+  * bakeCroissantsFromI(count: number) {
+    let i = 1;
+      for(i=1; i <= count; i++) {
+         yield `Croissant ${i} is baked`;
+    }
   }
 
-}
-function resolve(arg0: string) {
-  throw new Error('Function not implemented.');
 }
 
