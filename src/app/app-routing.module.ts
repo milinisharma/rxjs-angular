@@ -9,6 +9,7 @@ import { TimerComponent } from './components/observables/timer/timer.component';
 import { OfComponent } from './components/observables/of/of.component';
 import { FromComponent } from './components/observables/from/from.component';
 import { NewObservableComponent } from './components/observables/new-observable/new-observable.component';
+import { ToArrayComponent } from './components/operators/to-array/to-array.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: 'of', component: OfComponent },
       { path: 'from', component: FromComponent },
       { path: 'new-observable', component: NewObservableComponent },
+      { path: 'to-array', component: ToArrayComponent },
     ]
   },
   {

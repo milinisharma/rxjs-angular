@@ -25,6 +25,8 @@ import { TimerComponent } from './components/observables/timer/timer.component';
 import { OfComponent } from './components/observables/of/of.component';
 import { NewObservableComponent } from './components/observables/new-observable/new-observable.component';
 import { FromComponent } from './components/observables/from/from.component';
+import { OperatorsComponent } from './components/operators/operators.component';
+import { ToArrayComponent } from './components/operators/to-array/to-array.component';
 
 
 
@@ -41,7 +43,9 @@ import { FromComponent } from './components/observables/from/from.component';
     TimerComponent,
     OfComponent,
     NewObservableComponent,
-    FromComponent
+    FromComponent,
+    OperatorsComponent,
+    ToArrayComponent
   ],
   imports: [
     BrowserModule,
